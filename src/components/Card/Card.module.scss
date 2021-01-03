@@ -1,0 +1,20 @@
+@import '../variables';
+
+html {
+  min-height: 100vh;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-family-default;
+  font-size: 1.6rem;
+  background-color: darkcyan;
+  background-image: url('../../assets/images/bg-pattern-top.svg'), url('../../assets/images/bg-pattern-bottom.svg');
+  background-size: 1000px, 1200px;
+  background-position: calc(50% - 450px) calc(50% - 350px), calc(50% + 550px) calc(50% + 500px);
+  background-repeat: no-repeat, no-repeat;
+}
+
+.wrapper {}
+
+.top {}
