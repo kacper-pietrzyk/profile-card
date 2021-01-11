@@ -6,7 +6,7 @@ import Stats from '../Stats/Stats';
 import userImage from '../../assets/images/image-victor.jpg';
 
 const Card = () => (
-  <React.StrictMode>
+  <>
     <div className={styles.card}>
       <div className={styles.card__top}></div>
       <main className={styles.card__main}>
@@ -20,6 +20,6 @@ const Card = () => (
         <Stats />
       </main>
     </div >
-  </React.StrictMode >
+  </>
 )
 export default Card;
