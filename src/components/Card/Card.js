@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Card.module.scss';
 
-// import User from './User';
+import User from '../User/User';
 import Stats from '../Stats/Stats';
 
 import userImage from '../../assets/images/image-victor.jpg';
@@ -24,9 +24,9 @@ const Card = () => {
     console.log('wywołany useeffect')
   }, []);
 
+
   const index = Math.floor(Math.random() * (users.length + 1));
   const currentUser = users[index];
-
 
   return (
     <>
@@ -39,24 +39,10 @@ const Card = () => {
               src={userImage}
               alt="user" />
           </div>
-          {users.length !== 0 && (
-            <div className={styles.card__personal}>
-              <h1
-                className={styles.card__personal_primary}
-              >
-                {currentUser.name.first} {currentUser.name.last}
-                <span
-                  className={styles.card__personal_secondary}
-                >
-                  {currentUser.age}
-                </span>
-              </h1>
-              <p
-                className={styles.card__personal_secondary}
-              >
-                {currentUser.city}</p>
-            </div>
-          )}
+          {users.length !== 0 &&
+            <User
+              user={currentUser}
+            />}
           <Stats />
         </main>
       </div >
