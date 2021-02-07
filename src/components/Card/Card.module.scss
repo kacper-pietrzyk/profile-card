@@ -41,28 +41,4 @@ body {
     background-image: url('../../assets/images/bg-pattern-card.svg');
     border-radius: 15px 15px 0 0;
   }
-
-  &__imageWrapper {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &__image {
-    border: 6px solid #fff;
-    border-radius: 50%;
-  }
-
-  &__main {
-    flex-grow: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position: relative;
-    color: $color-main-text;
-    background-color: white;
-    border-radius: 0 0 15px 15px;
-    letter-spacing: .1rem;
-  }
 }
