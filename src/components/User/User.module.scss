@@ -1,5 +1,29 @@
 @import '../variables';
 
+.card__main {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  color: $color-main-text;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+  letter-spacing: .1rem;
+}
+
+.card__imageWrapper {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__image {
+  border: 6px solid #fff;
+  border-radius: 50%;
+}
+
 .card__personal {
   display: flex;
   flex-direction: column;
