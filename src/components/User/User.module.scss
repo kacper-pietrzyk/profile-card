@@ -1,45 +1,54 @@
 @import '../variables';
 
-.card__main {
-  flex-grow: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: relative;
-  color: $color-main-text;
-  background-color: white;
-  border-radius: 0 0 15px 15px;
-  letter-spacing: .1rem;
-}
+.card {
 
-.card__imageWrapper {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.card__image {
-  border: 6px solid #fff;
-  border-radius: 50%;
-}
-
-.card__personal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-  border-bottom: 1px solid $color-secondary-text;
-  padding-bottom: 25px;
-
-  &_primary {
-    margin-bottom: 5px;
-    font-size: 18px;
+  &__main {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    color: $color-main-text;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    letter-spacing: .1rem;
   }
 
-  &_secondary {
-    color: $color-secondary-text;
-    font-weight: 400;
-    margin-left: 6px;
+  &__imageWrapper {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__image {
+    border: 6px solid #fff;
+    border-radius: 50%;
+    transform: scale(.8);
+    transition: .2s;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  &__personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    border-bottom: 1px solid $color-secondary-text;
+    padding-bottom: 25px;
+
+    &_primary {
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+
+    &_secondary {
+      color: $color-secondary-text;
+      font-weight: 400;
+      margin-left: 6px;
+    }
   }
 }
