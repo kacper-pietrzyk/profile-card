@@ -3,15 +3,13 @@ import styles from './User.module.scss';
 
 import Stats from '../Stats/Stats';
 
-import userImage from '../../assets/images/image-victor.jpg';
-
 const User = ({ user }) => {
   return (
     <main className={styles.card__main}>
       <div className={styles.card__imageWrapper}>
         <img
           className={styles.card__image}
-          src={userImage}
+          src={user.picture}
           alt="user" />
       </div>
       <div className={styles.card__personal}>
@@ -25,9 +23,9 @@ const User = ({ user }) => {
         </h1>
         <p
           className={styles.card__personal_secondary}>
-          {user.city}</p>
+          {user.city}, {user.country}</p>
       </div>
-      <Stats />
+      <Stats user={user} />
     </main>
   )
 }
