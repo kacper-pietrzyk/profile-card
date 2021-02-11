@@ -3,6 +3,9 @@ import styles from './Card.module.scss';
 
 import User from '../User/User';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
+
 const Card = () => {
   const [users, setUsers] = useState([]);
 
@@ -26,6 +29,7 @@ const Card = () => {
     <>
       <div className={styles.card}>
         <div className={styles.card__top}>
+          <FontAwesomeIcon icon={faSyncAlt} className={styles.card__button} />
         </div>
         {users.length !== 0 &&
           <User
