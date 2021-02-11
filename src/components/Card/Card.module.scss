@@ -37,8 +37,23 @@ body {
   flex-direction: column;
 
   &__top {
-    flex-grow: 3;
+    position: relative;
+    flex-grow: 5;
     background-image: url('../../assets/images/bg-pattern-card.svg');
     border-radius: 15px 15px 0 0;
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: scale(1.7) translateY(-50%);
+    right: 10%;
+    color: $color-main-text;
+    transition: .3s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(2) translateY(-50%) rotate(180deg);
+    }
   }
 }
