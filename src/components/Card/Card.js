@@ -11,7 +11,7 @@ const Card = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const url = 'https://next.json-generator.com/api/json/get/EJaOYVFx9';
+    const url = 'https://api.json-generator.com/templates/hlH7oCnmcCDY/data?access_token=i9i2ump0kzrk14xfg6h7gwvxseudmbpscyfeh6qh';
     fetch(url)
       .then(response => {
         if (response.status === 200) {
